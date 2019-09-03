@@ -74,7 +74,7 @@ namespace Xamarin.Forms.Platform.Android
 
 		public void AnticipateClassConstruction(Type type)
 		{
-			Anticipate(() => RuntimeHelpers.RunClassConstructor(typeof(Resource.Layout).TypeHandle));
+			Anticipate(() => RuntimeHelpers.RunClassConstructor(type.TypeHandle));
 		}
 	}
 }
