@@ -72,3 +72,5 @@ caketools/
 .XamarinFormsVersionFile.txt
 .idea
 Visual Studio 2019/**
+# MFractors (Xamarin productivity tool) working folder 
+.mfractor/
