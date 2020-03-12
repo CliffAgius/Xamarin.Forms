@@ -128,6 +128,8 @@ namespace Xamarin.Forms.Platform.iOS
 				}
 			}
 
+			CustomUserAgent = WebView.setUserAgentString;
+
 			LoadRequest(request);
 		}
 
