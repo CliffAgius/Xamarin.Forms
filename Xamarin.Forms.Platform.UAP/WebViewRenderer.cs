@@ -70,7 +70,7 @@ if(bases.length == 0){
 				uri = new Uri(LocalScheme + url, UriKind.RelativeOrAbsolute);
 			}
 
-			if (Element.Cookies?.Count > 0 || Element.setUserAgentString != null)
+			if (Element.Cookies?.Count > 0 || Element.UserAgentString != null)
 			{
 				try
 				{
@@ -88,9 +88,9 @@ if(bases.length == 0){
 						}
 					}
 
-					if (Element.setUserAgentString != null)
+					if (Element.UserAgentString != null)
 					{
-						httpRequestMessage.Headers.Add("User-Agent", Element.setUserAgentString);
+						httpRequestMessage.Headers.Add("User-Agent", Element.UserAgentString);
 					}
 
 					Control.NavigateWithHttpRequestMessage(httpRequestMessage);
