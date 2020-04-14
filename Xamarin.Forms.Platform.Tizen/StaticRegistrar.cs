@@ -104,6 +104,8 @@ namespace Xamarin.Forms.Platform.Tizen
 			Registered.Register(typeof(SwipeView), () => new SwipeViewRenderer());
 			Registered.Register(typeof(RefreshView), () => new RefreshViewRenderer());
 			Registered.Register(typeof(MediaElement), () => new MediaElementRenderer());
+			Registered.Register(typeof(IndicatorView), () => new IndicatorViewRenderer());
+			Registered.Register(typeof(RadioButton), () => new RadioButtonRenderer());
 
 			//ImageSourceHandlers
 			Registered.Register(typeof(FileImageSource), () => new FileImageSourceHandler());
